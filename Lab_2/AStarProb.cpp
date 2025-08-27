@@ -27,7 +27,9 @@ int heuristic(int x1, int y1, int x2, int y2) {
 }
 
 void printPath(Node* endNode) {
+
     vector<pair<int,int>> path;
+
     while (endNode != nullptr) {
         path.push_back({endNode->x, endNode->y});
         endNode = endNode->parent;
@@ -42,7 +44,9 @@ void printPath(Node* endNode) {
 }
 
 void aStar(vector<vector<int>>& grid, pair<int,int> start, pair<int,int> goal) {
-    int rows = grid.size(), cols = grid[0].size();
+
+    int rows = grid.size();
+    int cols = grid[0].size();
     
     priority_queue<Node*, vector<Node*>, Compare> openList;
     vector<vector<bool>> closedList(rows, vector<bool>(cols, false));
