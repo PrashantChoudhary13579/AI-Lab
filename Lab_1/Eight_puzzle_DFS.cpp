@@ -3,7 +3,6 @@
 // #include<bool>
 using namespace std;
 
-
 bool visited[10] = {false};
 int state[10] = {0};
 int parent[10]= {-1};

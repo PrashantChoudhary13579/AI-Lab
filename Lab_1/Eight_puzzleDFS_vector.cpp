@@ -83,7 +83,7 @@ void DFS(vector<vector<int>>& mat, int row, int col) {
 }
 
 int main() {
-    vector<vector<int>> starting_puzzle = {{1,2,3},{0,4,6},{7,5,8}};
+    vector<vector<int>> starting_puzzle = {{1,3,2},{0,4,6},{7,5,8}};
     int row = 1, col = 0;  
 
     cout << "Starting state_num:" << endl;

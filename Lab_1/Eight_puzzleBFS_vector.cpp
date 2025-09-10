@@ -83,7 +83,7 @@ void BFS_puzzle(vector<vector<int>>& mat, int row, int col) {
 }
 
 int main() {
-    vector<vector<int>> puzzle = {{1,2,3},{0,4,5},{6,7,8}};
+    vector<vector<int>> puzzle = {{1,2,3},{4,5,6},{8,7,0}};
     int row = 1, col = 0;  
 
     cout << "Starting Puzzle:" << endl;
